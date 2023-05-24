@@ -48,7 +48,9 @@ do
         Console.WriteLine("{0}) Proveďte tuto akci: {1}", i + 1, kvp.Value);
         Console.WriteLine();
 
-        if (Console.ReadLine().ToLower() == kvp.Key.ToLower())
+        string input = Console.ReadLine().Trim();
+
+        if (input.ToLower() == kvp.Key.ToLower())
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
