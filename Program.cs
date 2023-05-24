@@ -96,8 +96,8 @@ KeyValuePair<string, string> Generate(KeyValuePair<string, string> pair)
         {
             nameIndex2 = Random.Shared.Next(0, names.Length);
         } while (nameIndex == nameIndex2);
-        key = key.Replace($"{name2}", names[nameIndex]);
-        value = value.Replace($"{name2}", names[nameIndex]);
+        key = key.Replace($"{name2}", names[nameIndex2]);
+        value = value.Replace($"{name2}", names[nameIndex2]);
     }
 
     if (key.Contains($"{lvl}"))
